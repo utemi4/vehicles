@@ -14,7 +14,7 @@ public non-sealed abstract class WaterVehicle extends Vehicle implements Sailabl
     }
 
     public void move() {
-        System.out.println(super.name() + " плывёт");
+        System.out.println(this.name() + " плывёт");
     }
 }
 

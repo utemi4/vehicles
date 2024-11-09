@@ -14,7 +14,7 @@ public non-sealed abstract class GroundVehicle extends Vehicle implements Moveab
     }
 
     public void move() {
-        System.out.println(super.name() + " движется по земле");
+        System.out.println(this.name() + " движется по земле");
     }
 }
 

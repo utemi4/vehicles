@@ -21,7 +21,7 @@ public non-sealed abstract class AirVehicle extends Vehicle implements Flyable {
     }
 
     public void move() {
-        System.out.println(super.name() + " летит");
+        System.out.println(this.name() + " летит");
     }
 }
 
