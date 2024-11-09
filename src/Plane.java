@@ -10,6 +10,6 @@ public class Plane extends AirVehicle {
     @Override
     public void info() {
         super.info();
-        System.out.println("Производитель самолёта: " + this.manufacturer);
+        System.out.println("Самолёт производителя " + this.manufacturer);
     }
 }

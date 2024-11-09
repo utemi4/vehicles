@@ -1,4 +1,5 @@
 public class Helicopter extends AirVehicle {
+
     private String manufacturer;
 
     public Helicopter(String name, String prod) {
@@ -9,6 +10,6 @@ public class Helicopter extends AirVehicle {
     @Override
     public void info() {
         super.info();
-        System.out.println("Производитель вертолёта: " + this.manufacturer);
+        System.out.println("Вертолёт производителя " + this.manufacturer);
     }
 }

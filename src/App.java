@@ -1,13 +1,17 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Plane plane = new Plane("Ил-12", "ОКБ");
-        plane.info();
-        plane.move();
-        Plane.AircraftEngine eng = plane.new AircraftEngine();
-        eng.inner_info();
+        Boat boat = new Boat("1");
+        boat.info();
+        boat.move();
+        Boat.Oars oars = boat.new Oars();
+        oars.inner_info();
 
-        Helicopter heli = new Helicopter("Ми-8", "ОКБ");
-        heli.info();
-        heli.move();
+        NuclearSubmarine sub = new NuclearSubmarine("Хаски", "МБМ 'Малахит'");
+        sub.info();
+        sub.move();
+        NuclearSubmarine.ElectricEngine eng = sub.new ElectricEngine();
+        eng.inner_info();
+        NuclearSubmarine.NuclearReactor reactor = sub.new NuclearReactor();
+        reactor.inner_info();
     }
 }
