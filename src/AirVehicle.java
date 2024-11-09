@@ -1,6 +1,5 @@
 public non-sealed abstract class AirVehicle extends Vehicle implements Flyable {
 
-    private String name;
     private VehicleType vehicleType;
 
     public AirVehicle(String name) {
@@ -10,7 +9,7 @@ public non-sealed abstract class AirVehicle extends Vehicle implements Flyable {
 
     public class AircraftEngine {
 
-        public void info() {
+        public void inner_info() {
             System.out.println("Авиационный двигатель");
         }
     }
@@ -21,11 +20,11 @@ public non-sealed abstract class AirVehicle extends Vehicle implements Flyable {
         System.out.println(this.vehicleType + " или же Воздушного типа");
     }
 
-    public void fly() {
-        System.out.println(this.name + " летит");
+    public void move() {
+        System.out.println(super.name() + " летит");
     }
 }
 
 interface Flyable {
-    void fly();
+    void move();
 }

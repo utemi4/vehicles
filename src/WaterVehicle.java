@@ -1,6 +1,5 @@
 public non-sealed abstract class WaterVehicle extends Vehicle implements Sailable {
 
-    private String name;
     private VehicleType vehicleType;
 
     public WaterVehicle(String name) {
@@ -14,11 +13,11 @@ public non-sealed abstract class WaterVehicle extends Vehicle implements Sailabl
         System.out.println(this.vehicleType + " или же Водного типа");
     }
 
-    public void sail() {
-        System.out.println(this.name + " плывёт");
+    public void move() {
+        System.out.println(super.name() + " плывёт");
     }
 }
 
 interface Sailable {
-    void sail();
+    void move();
 }
