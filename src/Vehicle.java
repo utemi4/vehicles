@@ -1,4 +1,4 @@
-public abstract sealed class Vehicle permits GroundVehicle, AirVehicle, WaterVehicle {
+public abstract sealed class Vehicle implements Moveable permits GroundVehicle, AirVehicle, WaterVehicle {
 
     private String name;
 
@@ -14,4 +14,8 @@ public abstract sealed class Vehicle permits GroundVehicle, AirVehicle, WaterVeh
         return this.name;
     }
 
+}
+
+interface Moveable {
+    void move();
 }

@@ -1,4 +1,4 @@
-public non-sealed abstract class AirVehicle extends Vehicle implements Flyable {
+public non-sealed abstract class AirVehicle extends Vehicle {
 
     private VehicleType vehicleType;
 
@@ -23,8 +23,4 @@ public non-sealed abstract class AirVehicle extends Vehicle implements Flyable {
     public void move() {
         System.out.println(this.name() + " летит");
     }
-}
-
-interface Flyable {
-    void move();
 }

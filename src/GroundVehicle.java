@@ -1,4 +1,4 @@
-public non-sealed abstract class GroundVehicle extends Vehicle implements Moveable {
+public non-sealed abstract class GroundVehicle extends Vehicle {
 
     private VehicleType vehicleType;
 
@@ -16,8 +16,4 @@ public non-sealed abstract class GroundVehicle extends Vehicle implements Moveab
     public void move() {
         System.out.println(this.name() + " движется по земле");
     }
-}
-
-interface Moveable {
-    void move();
 }
